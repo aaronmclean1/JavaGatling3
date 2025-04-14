@@ -1,7 +1,7 @@
 execution:
   executor: gatling
   scenario: my_test
-  concurrency: 10
+  concurrency: 100
   hold-for: 30s
 
 scenarios:

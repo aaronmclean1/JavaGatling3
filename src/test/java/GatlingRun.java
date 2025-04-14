@@ -10,7 +10,7 @@ public class GatlingRun extends Simulation {
 
     HttpProtocolBuilder httpProtocol = http.baseUrl("https://example.com");
 
-    ScenarioBuilder scn = scenario("Java DSL Simulation").exec(http("Request_1").get("/"));
+    ScenarioBuilder scn = scenario("GatlingRun").exec(http("Request_1").get("/"));
 
     {
         setUp(scn.injectOpen(atOnceUsers(19))).protocols(httpProtocol);
