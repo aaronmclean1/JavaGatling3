@@ -21,6 +21,13 @@ pipeline {
             }
         }
 
+        stage('Simulations') {
+            steps {
+                sh 'pwd'
+                sh '/opt/homebrew/opt/bzt/bin/bzt BlazeTest.yml'
+            }
+        }
+
         stage('Publish Reports') {
             steps {
                 archiveArtifacts artifacts: 'target/gatling/**/*', allowEmptyArchive: true

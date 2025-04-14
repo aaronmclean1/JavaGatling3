@@ -1,0 +1,10 @@
+execution:
+  executor: gatling
+  scenario: my_test
+  concurrency: 10
+  hold-for: 30s
+
+scenarios:
+  my_test:
+    script: ./../java/GatlingRun.java
+
