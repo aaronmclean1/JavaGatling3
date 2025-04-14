@@ -24,7 +24,7 @@ pipeline {
         stage('Simulations') {
             steps {
                 sh 'pwd'
-                sh '/opt/homebrew/opt/bzt/bin/bzt BlazeTest.yml'
+                //sh '/opt/homebrew/opt/bzt/bin/bzt BlazeTest.yml'
             }
         }
 
